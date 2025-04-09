@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxRoad Dispatch Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            try {
+                emailjs.init("wUzfUVb53p51qxurC");
+                console.log("EmailJS initialized successfully");
+            } catch (error) {
+                console.error("Failed to initialize EmailJS:", error);
+                alert("Failed to initialize email service. Please refresh the page and try again.");
+            }
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="nav-container">
+                <a href="#" class="logo">LuxRoad</a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#benefits">Why LuxRoad</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-buttons">
+                    <a href="#contact" class="nav-button primary">Get Started</a>
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1>Your Outsourced Dispatch Service</h1>
+            <p>Experience premium dispatch services with our dedicated team of experts. We provide 24/7 support to keep your transportation business running smoothly.</p>
+            <div class="cta-container">
+                <a href="#services" class="cta">Explore Our Services</a>
+                <a href="#contact" class="cta">Request A Quote</a>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-icon">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="divider-line"></div>
+    </div>
+
+    
+    <main>
+        <section id="services" class="service-section">
+            <div class="service-content">
+                <h2>Our Services</h2>
+                <p class="section-description">We provide comprehensive transportation solutions with a diverse fleet to meet all your shipping needs.</p>
+                
+                <div class="service-details">
+                    <div class="service-text">
+                        <h3>Car Hauling</h3>
+                        <p>Specialized transportation for vehicles of all types, ensuring safe and secure delivery.</p>
+                        <ul>
+                            <li>Experienced in managing car hauler dispatch.</li>
+                            <li>Ensuring timely deliveries and optimized routes.</li>
+                            <li>Dedicated to seamless vehicle transport coordination.</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <img src="./images/car-hauler.jpg" alt="Car Hauler Service">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="service-content">
+                <div class="service-details">
+                    <div class="service-image">
+                        <img src="./images/dry-van.jpg" alt="Dry Van Service">
+                    </div>
+                    <div class="service-text">
+                        <h3>Dry Van and Power Only</h3>
+                        <p>Secure and weather-protected shipping for general freight and packaged goods.</p>
+                        <ul>
+                            <li>Specializes in managing dry van dispatching.</li>
+                            <li>Focus on efficiency, reliability, and timely deliveries.</li>
+                            <li>Optimized routing for fuel savings and minimal delays.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="service-content">
+                <div class="service-details">
+                    <div class="service-text">
+                        <h3>Flatbed/Step Deck</h3>
+                        <p>Open-air transportation for oversized and heavy equipment with flexible loading options.</p>
+                        <ul>
+                            <li>Specialized in flatbed and stepdeck dispatch operations.</li>
+                            <li>Ensuring safe transport of oversized freight.</li>
+                            <li>Expert dispatchers optimize routes for on-time deliveries.</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <img src="./images/flatbed.jpg" alt="Flatbed Service">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="service-content">
+                <div class="service-details">
+                    <div class="service-image">
+                        <img src="./images/reefer.jpg" alt="Reefer Service">
+                    </div>
+                    <div class="service-text">
+                        <h3>Reefer Transportation</h3>
+                        <p>Temperature-controlled shipping for perishable goods and sensitive cargo.</p>
+                        <ul>
+                            <li>Expert reefer dispatching for temperature-sensitive shipments.</li>
+                            <li>Real-time monitoring ensures precise climate control.</li>
+                            <li>Maximizing route efficiency for high-paying, on-time deliveries.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+
+        <section id="benefits" class="benefits-section">
+            <div class="benefits-content">
+                <h2 class="text-center">Why Choose LuxRoad</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-clock fa-3x"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Round-the-clock assistance for all your transportation needs</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-calculator fa-3x"></i>
+                        <h3>Accounting</h3>
+                        <p>Streamlined financial management and transparent billing</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-shield-alt fa-3x"></i>
+                        <h3>Safety</h3>
+                        <p>Top-tier safety protocols and compliance standards</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-tachometer-alt fa-3x"></i>
+                        <h3>ELD Support</h3>
+                        <p>Comprehensive electronic logging device assistance and monitoring</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-truck fa-3x"></i>
+                        <h3>Premium Fleet</h3>
+                        <p>State-of-the-art vehicles for reliable transportation</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-map-marked-alt fa-3x"></i>
+                        <h3>Nationwide Coverage</h3>
+                        <p>Extensive network across the United States</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-handshake fa-3x"></i>
+                        <h3>Dedicated Support</h3>
+                        <p>Personalized service for each client</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-chart-line fa-3x"></i>
+                        <h3>Growth Focused</h3>
+                        <p>Strategies to help your business expand</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+
+        <section id="pricing" class="pricing-section">
+            <div class="pricing-content">
+                <div class="pricing-header">
+                    <h2>Our Service Plans</h2>
+                    <p class="section-description">Choose the perfect plan that fits your business needs</p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Pay To Go</h3>
+                            <div class="price">
+                                <span class="amount">3%</span>
+                                <span class="period">per load</span>
+                            </div>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> We obtain highest paid loads</li>
+                            <li><i class="fas fa-check"></i> We run credit on all brokers and shippers</li>
+                            <li><i class="fas fa-check"></i> All necessary paperwork</li>
+                            <li><i class="fas fa-check"></i> 24/7 dispatching</li>
+                            <li><i class="fas fa-check"></i> Monitoring your whole trip</li>
+                        </ul>
+                        <a href="#contact" class="pricing-btn">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="pricing-header">
+                            <h3>Dispatch Pro</h3>
+                            <div class="price">
+                                <span class="amount">5%</span>
+                                <span class="period">per load</span>
+                            </div>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Includes all "Pay to Go" features</li>
+                            <li><i class="fas fa-check"></i> Providing all Rate Confirmations</li>
+                            <li><i class="fas fa-check"></i> Book keeping</li>
+                            <li><i class="fas fa-check"></i> 24/7 ELD assistance</li>
+                            <li><i class="fas fa-check"></i> Weekly Data Reports</li>
+                        </ul>
+                        <a href="#contact" class="pricing-btn">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Premium Service</h3>
+                            <div class="price">
+                                <span class="amount">8%</span>
+                                <span class="period">per load</span>
+                            </div>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Includes all "Pay to Go" features</li>
+                            <li><i class="fas fa-check"></i> Includes all "Dispatch Pro" features</li>
+                            <li><i class="fas fa-check"></i> Managing whole process</li>
+                            <li><i class="fas fa-check"></i> You just drive</li>
+                        </ul>
+                        <a href="#contact" class="pricing-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <div class="about-header">
+                    <h2>About Us</h2>
+                    <p class="section-description">Delivering Excellence in Transportation Since 2010</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <div class="about-story">
+                            <h3>Our Journey</h3>
+                            <p>At LuxRoad Dispatch, we've been at the forefront of transportation excellence for over a decade. Our journey began with a simple mission: to provide unparalleled dispatch services that empower transportation businesses to thrive.</p>
+                            <p>Today, we stand as a trusted partner for countless carriers across the nation, offering comprehensive solutions that drive success in the ever-evolving logistics landscape.</p>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h4><span class="counter" data-target="13"></span>7+</h4>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <h4><span class="counter" data-target="1000"></span>500+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-truck"></i>
+                            <h4><span class="counter" data-target="24"></span>24/7</h4>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-values">
+                    <h3>What Our Clients Say</h3>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="client-profile">
+                                <img src="./images/michael-johnson.jpg" alt="Michael Johnson" class="profile-image">
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                            <p>"LuxRoad's dispatch service has transformed our operations. Their 24/7 support and efficient load management have significantly increased our productivity."</p>
+                            <div class="client-info">
+                                <h4>Michael Johnson</h4>
+                                <p>Owner, Johnson Trucking</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="client-profile">
+                                <img src="./images/sarah-williams.jpg" alt="Sarah Williams" class="profile-image">
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                            <p>"The ELD support and compliance management have been invaluable. Their team's expertise has helped us navigate complex regulations with ease."</p>
+                            <div class="client-info">
+                                <h4>Sarah Williams</h4>
+                                <p>Operations Manager, Swift Haul</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="client-profile">
+                                <img src="./images/david-chen.jpg" alt="David Chen" class="profile-image">
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Their accounting services have streamlined our financial operations. The transparency and efficiency have been game-changing for our business."</p>
+                            <div class="client-info">
+                                <h4>David Chen</h4>
+                                <p>CEO, Pacific Transport</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="client-profile">
+                                <img src="./images/lisa-rodriguez.jpg" alt="Lisa Rodriguez" class="profile-image">
+                            </div>
+                            <i class="fas fa-quote-left"></i>
+                            <p>"The dedicated support team at LuxRoad has been exceptional. They truly understand our needs and go above and beyond to ensure our success."</p>
+                            <div class="client-info">
+                                <h4>Lisa Rodriguez</h4>
+                                <p>Fleet Manager, Eagle Logistics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cta">
+                    <p>Ready to experience the difference with LuxRoad?</p>
+                    <a href="#contact" class="cta">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="divider-line"></div>
+        </div>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-content">
+                <div class="contact-header">
+                    <h2>Get in Touch</h2>
+                    <p class="section-description">Let's discuss how we can optimize your logistics operations</p>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="luxury-contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="first-name" name="first-name" required>
+                                <label for="first-name">First Name</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email Address</label>
+                                <div class="form-line"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" required>
+                                <label for="phone">Phone Number</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Select Service Type</option>
+                                    <option value="freight">Dry Van and Power Only</option>
+                                    <option value="logistics">Car Hauling</option>
+                                    <option value="warehousing">Flatbed and Stepdeck</option>
+                                    <option value="consulting">Reefer</option>
+                                </select>
+                                <div class="form-line"></div>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>We'll get back to you shortly.</p>
+                        <button class="reset-form">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <h2>LuxRoad</h2>
+                        <p class="tagline">Excellence in Transportation</p>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>6 Kilmer Road, Edison, NJ</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+1 (323) 531-5287</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@luxroaddispatch.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.1427887950147!2d-74.3996301!3d40.5207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c29e5e7af589%3A0x49c24602b520b6b3!2s6%20Kilmer%20Rd%2C%20Edison%2C%20NJ%2008817!5e0!3m2!1sen!2sus!4v1647887654321!5m2!1sen!2sus"
+                        width="100%" 
+                        height="200" 
+                        style="border:0; border-radius: 12px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Amazon & DAT Freight</a></li>
+                        <li><a href="#services">Car Hauling</a></li>
+                        <li><a href="#services">Flatbed and Stepdeck</a></li>
+                        <li><a href="#services">Reefer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61573117966607" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://instagram.com/luxroad_dispatch" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://t.me/luxroad" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 LuxRoad Dispatch Service. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+            <i class="fas fa-chevron-up"></i>
+            <span class="scroll-text">Top</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
